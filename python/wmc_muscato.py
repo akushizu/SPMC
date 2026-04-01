@@ -13,7 +13,7 @@ def propagate(sp, x0, dx, dt) :
 
 def range_check(sp, Nx, Np) :
 
-	if (sp.xcell >= 0 and sp.xcell < Nx) or (sp.pcell >= 0 and sp.pcell < Np) :
+	if (sp.xcell >= 0 and sp.xcell < Nx) and (sp.pcell >= 0 and sp.pcell < Np) :
 		
 		return True
 
