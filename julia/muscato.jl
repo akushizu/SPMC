@@ -75,7 +75,7 @@ function @main()(args)
 
 	t1 = t0
 	t2 = time_ns()
-	println("Elapsed time is $((t2-t1)/1e8) seconds.")
+	println("Elapsed time is $((t2-t1)/1e9) seconds.")
 	println("Total elapsed time is $(canonicalize(Nanosecond(t2-t0)))")
 	flush(stdout)
 
@@ -98,7 +98,7 @@ function @main()(args)
 
 		t1 = t2
 		t2 = time_ns()
-		println("Elapsed time is $((t2-t1)/1e8) seconds.")
+		println("Elapsed time is $((t2-t1)/1e9) seconds.")
 		println("Total elapsed time is $(canonicalize(Nanosecond(t2-t0)))")
 		flush(stdout)
 
